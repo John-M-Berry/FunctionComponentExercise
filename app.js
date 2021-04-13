@@ -161,23 +161,20 @@ const DiceRoll = () => {
     const die1 = Math.floor(Math.random() *6)+1;
     // 8c. Below the die1 variable, use Math.random again to return a random number between 1 and 6 and set it to const variable called "die2"
     const die2 = Math.floor(Math.random() *6)+1;
+    // 8d. Below the die2 variable, have the DiceRoll function component return an h1 element. Inside the h1 element use a TERNARY that…
+    // Sets the text for the h1 to "SNAKE EYES" if both die1 and die2 are equal to 1 
+    // Or
+    // If either die1 or die2 is NOT equal to 1 sets the text for the h1 to the values for each die like shown in this example: 2 & 5.
 
     return (
        <h1></h1>
     );
 }
 
+ReactDOM.render(
 
+    <DiceRoll />,
 
-
-
-
-
-// 8d. Below the die2 variable, have the DiceRoll function component return an h1 element. Inside the h1 element use a TERNARY that…
-// Sets the text for the h1 to "SNAKE EYES" if both die1 and die2 are equal to 1 
-// Or
-// If either die1 or die2 is NOT equal to 1 sets the text for the h1 to the values for each die like shown in this example: 2 & 5.
-
-
-
+    document.getElementById('root')
+);
 // 8e. Below the DiceRoll function component, use the ReactDOM Render method again to render/display the DiceRoll function component in the div with the id of "root" in the HTML file
