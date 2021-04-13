@@ -167,7 +167,7 @@ const DiceRoll = () => {
     // If either die1 or die2 is NOT equal to 1 sets the text for the h1 to the values for each die like shown in this example: 2 & 5.
 
     return (
-        <h1></h1>
+        <h1>{(die1 === 1 && die2 === 1) ? "SNAKE EYES" : `${die1} & ${die2}`}</h1>
     );
 }
 
